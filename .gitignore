@@ -24,3 +24,6 @@ hs_err_pid*
 
 #TXT Files
 *.txt
+
+#PDF Files
+*.pdf
