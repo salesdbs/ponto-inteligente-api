@@ -27,4 +27,12 @@ hs_err_pid*
 
 #PDF Files
 *.pdf
+
+
 /.metadata/
+/.classpath
+/.springBeans
+/.project
+/.settings/
+/.gradle/
+/build/
