@@ -25,7 +25,7 @@ public class PersonController {
 				method = RequestMethod.GET,
 				produces = org.springframework.http.MediaType.APPLICATION_JSON_VALUE
 			)
-	public Person findById(@PathVariable("id")String id) {
+	public Person findById(@PathVariable("id")Long id) {
 		return services.findById(id);
 	}
 
@@ -64,7 +64,7 @@ public class PersonController {
 				method = RequestMethod.DELETE,
 				produces = org.springframework.http.MediaType.APPLICATION_JSON_VALUE
 			)
-	public void delete(@PathVariable("id")String id) {
+	public void delete(@PathVariable("id")Long id) {
 		services.delete(id);
 	}
 

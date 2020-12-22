@@ -1,8 +1,40 @@
 package br.com.dsdesenvolvimento.exception;
 
-public class ExceptionResponse {
+import java.io.Serializable;
+import java.util.Date;
 
-	// FALTA IMPLEMENTAR 
-	// https://www.udemy.com/course/restful-apis-do-0-a-nuvem-com-springboot-e-docker/learn/lecture/14147993#questions
+public class ExceptionResponse implements Serializable{
+	
+	private static final long serialVersionUID = 1L;
+	
+	private Date timestamp;
+	private String messege;
+	private String details;
+	
+	public ExceptionResponse(Date timestamp, String message, String details) {
+		super();
+		this.timestamp =timestamp;
+		this.messege = message;
+		this.details = details;
+	}
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+
+	public Date getTimestamp() {
+		return timestamp;
+	}
+
+	public String getMessege() {
+		return messege;
+	}
+
+	public String getDetails() {
+		return details;
+	}
+
+	
+	
 	
 }
