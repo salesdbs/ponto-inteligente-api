@@ -1,4 +1,4 @@
-package br.com.dsdesenvolvimento.model;
+package br.com.dsdesenvolvimento.data.model;
 
 import java.io.Serializable;
 
